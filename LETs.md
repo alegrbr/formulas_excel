@@ -3,6 +3,7 @@
 A fórmula abaixo retorna uma lista de valores que estão duplicados em uma coluna. 
 Para usar basta definir a referência de células para a variável "valores".
 
+```
 =LET(
     valores;A1:A5;
     valores_distintos;ÚNICO(valores);
@@ -10,3 +11,4 @@ Para usar basta definir a referência de células para a variável "valores".
     criterio;CONT.SE(valores;valores_distintos)>1;
     FILTRO(valores_distintos;criterio;"nenhum item duplicado")
 )
+```
